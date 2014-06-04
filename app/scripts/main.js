@@ -47,6 +47,7 @@ var ThumbnailView = Backbone.View.extend({
 	initialize: function() {
 		$('.container').append(this.el);
 		this.render();
+
 	},
 
 	render: function() {
@@ -63,6 +64,7 @@ var ThumbnailView = Backbone.View.extend({
 
 
 // create instances
+
 
 var newPhoto = new PhotoCollection();
 

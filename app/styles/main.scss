@@ -6,24 +6,33 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
 }
-.detail-container{
+.container { 
+    height: 300px;
+    overflow: scroll;
+    background-color: blue;
+}
+
+.detail-container {
     min-width: 400px;
     min-height: 400px;
     background-color: gray;
 }
+
 .detail-img {
     height: 400px;
     margin:auto; 
-    display:block
+    display:block;
 }
+
 .thumb-img {
-    width: 200px;
+    width: 300px;
     margin:auto; 
-    display:block
+    display:block;
 
 }
+
 .thumb-bound {
-    width: 200px;
+    width: 3    00px;
     margin:auto; 
     display:block;
     float: left;
