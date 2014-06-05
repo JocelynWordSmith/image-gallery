@@ -75,3 +75,12 @@ newPhoto.fetch().done(function() {
 		});
 	});
 });
+
+// var $container = $('#container');
+// // initialize
+// $container.masonry({
+//   columnWidth: 200,
+//   itemSelector: '.item'
+// });
+
+// var msnry = $container.data('masonry');
