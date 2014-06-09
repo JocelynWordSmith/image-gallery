@@ -40,9 +40,9 @@ var ThumbnailView = Backbone.View.extend({
 
 	template: _.template($('.thumbnail-template').text()),
 
-	events: {
-		'click': 'showDetailView'
-	},
+	// events: {
+	// 	'click': 'showDetailView'
+	// },
 
 	initialize: function() {
 		$('.container').append(this.el);
