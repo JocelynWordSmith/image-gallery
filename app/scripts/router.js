@@ -12,8 +12,13 @@ var appRouter = Backbone.Router.extend({
 	},
 
 	renderDetail: function (id) {
-		var detailInstance = new DetailView({model: id});
-		$('detail-container').html(detailInstance);
+		var modelPhoto = newPhoto.get(id);
+		console.log(newPhoto.length, ' is the length of the collection')
+		console.log('model is: ', modelPhoto);
+
+		var detailInstance = new DetailView({model: modelPhoto});
+		
+		// $('.detail-container').html(detailInstance);
 	},
 
 	// renderNew: function () {
@@ -21,6 +26,6 @@ var appRouter = Backbone.Router.extend({
 	// },
 })
 
-var router = new appRouter();
+// var router = new appRouter();
 
-Backbone.history.start();
+// Backbone.history.start();

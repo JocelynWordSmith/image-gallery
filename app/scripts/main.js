@@ -69,12 +69,18 @@ var ThumbnailView = Backbone.View.extend({
 var newPhoto = new PhotoCollection();
 
 newPhoto.fetch().done(function() {
+
+	var router = new appRouter();
+	Backbone.history.start();
+	
 	newPhoto.each(function(photo) {
 		new ThumbnailView({
 			model: photo
 		});
 	});
 });
+
+
 
 // var $container = $('#container');
 // // initialize
